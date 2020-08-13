@@ -5,4 +5,5 @@ Three implementations of a prediction-classification, image processing (CNN mode
 * CNN model with `tf.Estimator`
 * LSTM model to predict a time series data from an industrial machine
 Meanwhile, the data sets are not included in each project due to privacy concerns.
+* Publication: In view
  
