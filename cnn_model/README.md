@@ -2,7 +2,7 @@ The aim is to classify images.
 
 ## The data
 
-Not included
+Not included due to privacy concerns.
 ## The model
 
 In the trainer folder, you will be able to see several python files. The data.py, task.py and final_task.py files 
