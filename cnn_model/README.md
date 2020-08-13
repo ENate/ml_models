@@ -1,5 +1,3 @@
-Hello potential ML6 colleague!
-
 The aim is to classify images.
 
 ## The data
