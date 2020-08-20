@@ -51,5 +51,5 @@ if __name__ == "__main__":
     # os.environ['TF_CPP_MIN_LOG_LEVEL'] = str(tf.logging.__dict__['INFO'] / 10)
 
     HPARAMS = hparam.HParams(**ARGS.__dict__)
-    data_wcds = '/home/nath/forLenovoUbuntu/datfile/otherdata/tfExample/datafiles/breast-cancer-wisconsin-data/data.csv'
+    data_wcds = '/home/to-data/data.csv'
     training_model(HPARAMS, data_wcds)
