@@ -16,11 +16,10 @@ basically full CI/CD pipelines using Gitlab Platform.
 class TestMakeDataset(unittest.TestCase):
 
     def test_process_dataset_func(self):
-        self.val_filename = "/home/nath/theFinalProject/structured_l2_data/data/raw/" \
-                            "breast-cancer-wisconsin-data/data.csv"
+        self.val_filename = "/foldertodata/data.csv"
         self.assertEqual(process_dataset_func(self.val_filename), 569)
 
     def test_function_cleveland_data(self, cleveland_filename):
-        self.cleveland_filename = "/data_cleveland/"
+        self.cleveland_filename = "/foldertoanotherdata/"
         # self.assertEqual()
 

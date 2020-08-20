@@ -118,7 +118,7 @@ if __name__ == '__main__':
     """ Enter file Name and call functions to start training """
     run_flag = 1
     # wcds_data_file = "/home/nath/Desktop/dec2019/0412_folder/saved_latest/data/data.csv"
-    wcds_data_file = '/home/nath/forLenovoUbuntu/datfile/otherdata/tfExample/datafiles/breast-cancer-wisconsin-data/data.csv'
+    wcds_data_file = '/pathtodata/data.csv'
     opt_theta = main_run_file(run_flag, wcds_data_file)
     # Pass data to model building function to compute the loss and other values
     # Pass the loss to training function and start training
