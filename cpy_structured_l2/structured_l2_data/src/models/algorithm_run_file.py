@@ -99,7 +99,7 @@ def main_run_file(choose_flag, wcds_data):
             f1.suptitle('Predicting Artificial Data from Model', fontsize=14, fontweight='bold')
             plt.xlabel('Model', fontsize=14, fontweight='bold')
             plt.ylabel('Data', fontsize=14, fontweight='bold')
-            f1.savefig('/home/nath/finalResults/classifiers/scatter_testData.pdf')
+            f1.savefig('~/scatterplot_testData.pdf')
             # test set ##########################################################
             # ####################################################################
             nm_test = xtest.shape[0]
@@ -117,8 +117,12 @@ def main_run_file(choose_flag, wcds_data):
 if __name__ == '__main__':
     """ Enter file Name and call functions to start training """
     run_flag = 1
+<<<<<<< HEAD
     # wcds_data_file = "/home/nath/Desktop/dec2019/0412_folder/saved_latest/data/data.csv"
     wcds_data_file = '/pathtodata/data.csv'
+=======
+    wcds_data_file = '/some_path-to-data/data.csv'
+>>>>>>> 86d38279157a0b87dc04373d2702c39f789e76fd
     opt_theta = main_run_file(run_flag, wcds_data_file)
     # Pass data to model building function to compute the loss and other values
     # Pass the loss to training function and start training

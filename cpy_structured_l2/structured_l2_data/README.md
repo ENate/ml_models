@@ -55,3 +55,6 @@ Project Organization
 --------
 
 <p><small>Project based on the <a target="_blank" href="https://drivendata.github.io/cookiecutter-data-science/">cookiecutter data science project template</a>. #cookiecutterdatascience</small></p>
+
+Aim is to introduce a continuous feature selection method by combining a structured l2 and Lasso penalties. The implementation is done via Python 3.7, TensorFlow and other related libraries.
+
