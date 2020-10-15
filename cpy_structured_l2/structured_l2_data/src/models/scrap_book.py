@@ -2,6 +2,11 @@ import argparse
 
 
 def fun_dict_values(kwargs):
+    """
+    Define parameters
+    @param: kwargs
+    
+    """
     a_values = kwargs['a'] * 2
     b_values = kwargs['b'] * 4
     return a_values, b_values

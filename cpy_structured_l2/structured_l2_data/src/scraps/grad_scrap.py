@@ -19,9 +19,14 @@ b2 = np.random.randn(O)
 
 
 def ffpass_np(x):
-  a1 = np.dot(x, w1) + b1  # affine
-  r = np.maximum(0, a1)  # ReLU
-  a2 = np.dot(r, w2) + b2  # affine
+    """ 
+    Implementing the keras
+    @param: x
+    @return
+    """
+    a1 = np.dot(x, w1) + b1  # affine
+    r = np.maximum(0, a1)  # ReLU
+    a2 = np.dot(r, w2) + b2  # affine
 
   exps = np.exp(a2 - np.max(a2))  # softmax
   out = exps / exps.sum()
@@ -52,3 +57,6 @@ def jacobian_tensorflow(x, verbose=False):
     jacobian_matrix.append(gradients[0][0, :])
 
   return np.array(jacobian_matrix)
+
+
+
