@@ -6,8 +6,8 @@ from sklearn.metrics import precision_recall_fscore_support as score
 import matplotlib.pyplot as plt
 
 
-class ModelPredict(object):
-
+class ModelPredict:
+    """A class to plot predictions and analyze results"""
     def __init__(self, batch_sizes, training_iterations, display_iter):
         self.int_value = None
         self.batch_sizes = batch_sizes
@@ -17,12 +17,14 @@ class ModelPredict(object):
         self.display_iter = display_iter
 
     def predict_function(self, opt_params):
+        """Function to compute the parameter square_value?"""
         self.int_value = opt_params
         self.square_value = self.int_value ** 2
         print('The square root value is', self.square_value)
         return self.square_value
 
     def plot_function(self, train_losses, train_accuracies, test_losses, test_accuracies):
+        """A function to format plotting and then plot results"""
         font = {
             'family': 'Bitstream Vera Sans',
             'weight': 'bold',
@@ -49,11 +51,12 @@ class ModelPredict(object):
         plt.legend(loc='upper right', shadow=True)
         plt.ylabel('Training Progress (Loss or Accuracy values)')
         plt.xlabel('Training iteration')
-        g1.savefig('/home/nath/tasks/talpa-datascience-task/'
+        g1.savefig('~/tasks/talpa-datascience-task/'
                    'reports/figures/training_test_progress.pdf')
         plt.show()
 
     def metrics_confusion_matrices(self, one_hot_predictions, accuracy, out_test_set, out_classes):
+        """A function to compute confustion matrices and other statistics"""
         state_labels = ["Machine Off:4", "Idle:3", "Travelling:6", "Hole Setup:2", "Drilling:1", "Anchoring: 0",
                         "Translational Delay:5"]
         # Results
@@ -111,7 +114,7 @@ class ModelPredict(object):
         plt.tight_layout()
         plt.ylabel('True label')
         plt.xlabel('Predicted label')
-        g0.savefig('/home/nath/tasks/talpa-datascience-task/reports/figures/confusion_matrix.pdf')
+        g0.savefig('~/tasks/talpa-datascience-task/reports/figures/confusion_matrix.pdf')
         plt.show()
 
 
